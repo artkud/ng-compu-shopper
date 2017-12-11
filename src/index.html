@@ -21,84 +21,98 @@
 <body>
 <app-root></app-root>
 
-<div class="page">
+<div class="site-wrapper">
     <div class="xs-header">
-      <div class="xs-header-menu-toggle hidden-lg hidden-md">
-        <a href="#menu">&nbsp;</a>
-        <div class="icon">
-          <div class="first">
+      <div class="xs-header-menu-toggle">
+        <a href="#menu" class="xs-header-menu-toggle__link">&nbsp;</a>
+        <div class="icon xs-header-menu-toggle-icon">
+          <div class="first xs-header-menu-toggle-icon__first">
             &nbsp;
           </div>
-          <div class="second">
+          <div class="second xs-header-menu-toggle-icon__second">
             &nbsp;
           </div>
-          <div class="third">
+          <div class="third  xs-header-menu-toggle-icon__third">
             &nbsp;
           </div>
         </div>
       </div>
-      <a class="logo-mm bottom-header-logo__href_site-name" href="/">Compu<span>-Shopper</span></a>
+      <a class="logo-mm xs-header__logo" href="/">Compu<span class="xs-header__logo-accent">-Shopper</span></a>
     </div>
-    <div id="page-wrapper">
-      <div class="box-shadow-wrapper">
-        <div class="hidden-xs top-header">
-          <div class="top-header-row">
-            <div class="top-header-menu" onclick="$(this).toggleClass('top-header-menu_opened')">
-              <div class="top-header-menu__header">
-                <div class="top-header-menu__header-caption">Catalog</div>
-                <div class="hidden-xs top-header-menu__hidden">
+    <div id="page-wrapper" class="page-wrapper">
+      <div class="page-wrapper__shadow-box">
+        <div class="hidden-xs header-top">
+          <div class="header-top-row">
+            <div class="header-top-catalog-menu">
+              <div class="header-top-catalog-menu__container">
+                <div class="header-top-catalog-menu__header-caption">Catalog</div>
+                <div class="header-top-catalog-menu__hidden">
 
-                  <ul class="nav-menu">
+                  <ul class="catalog-menu">
 
-                    <li class="nav-menu-1-level {f.active}">
-                      <a href="/" class="nav-menu-1-level__href">Computers</a>
+                    <li class="catalog-menu-1-level catalog-menu-1-level_active">
+                      <a href="/" class="catalog-menu-1-level__link">Computers</a>
+                      
+                       <ul class="catalog-menu-1-level__submenu">
+                    <li class="catalog-menu-2-level catalog-menu-2-level_active">
+                      <a href="/" class="catalog-menu-2-level__link">Second menu level</a>
+                      
+                      <ul class="catalog-menu-2-level__submenu">
+                        <li class="catalog-menu-3-level catalog-menu-3-level_active"><a href="/" class="catalog-menu-3-level__link">Third menu level</a></li>
+                      </ul>
+                      
                     </li>
-                    <li class="nav-menu-1-level {f.active}">
-                      <a href="/" class="nav-menu-1-level__href">Smartphones</a>
+                  </ul>
+                      
+                    </li>
+                    <li class="catalog-menu-1-level">
+                      <a href="/" class="catalog-menu-1-level__link">Smartphones</a>
                     </li>
                   </ul>
 
                 </div>
               </div>
             </div>
-            <div class="top-header-menus">
+            <div class="header-top-nav-menu">
 
-              <a href="/" class="top-header-menus__href">Home</a>
-              <a href="/" class="top-header-menus__href">Contacts</a>
-              <a href="/" class="top-header-menus__href">Reviews</a>
-              <a href="/" class="top-header-menus__href">About us</a>
+              <a href="/" class="header-top-nav-menu__link">Home</a>
+              <a href="/" class="header-top-nav-menu__link">Contacts</a>
+              <a href="/" class="header-top-nav-menu__link">Reviews</a>
+              <a href="/" class="header-top-nav-menu__link">About us</a>
 
 
 
-              <div class="top-header-search" onclick="toggleSearch(event)">
-                <div class="top-header-search-box">
-                  <form action="/" class="form-search">
-                    <input class="form-control form-search__input" name="text" placeholder="Search products" type="text" value="" />
-                    <input class="form-search__button" type="submit" value="" /> &nbsp;
+              <div class="header-top-search">
+                <div class="header-top-search-container">
+                  <form action="/" class="header-top-search-form">
+                    <input class="form-control header-top-search-form__input" name="text" placeholder="Search products" type="text" value="" />
+                    <input class="header-top-search-form__btn" type="submit" value="" /> &nbsp;
                   </form>
                 </div>
               </div>
             </div>
-            <div class="top-header-cabinet">
-              <a aria-hidden="true" class="top-header-cabinet__href top-header-cabinet__href_login" href="/" type="button">&nbsp;</a>
+            <div class="header-top-user-cabinet">
+              <a aria-hidden="true" class="header-top-user-cabinet__link header-top-user-cabinet__link_login" href="/" type="button">&nbsp;</a>
             </div>
           </div>
         </div>
-        <div class="hidden-xs bottom-header">
-          <div class="row bottom-header-row">
-            <div class="col-sm-3 col-md-4 bottom-header-logo">
-              <a class="bottom-header-logo__href bottom-header-logo__href_site-name" href="/" style="display:none">Compu<span>-Shopper</span></a>
+        <div class="hidden-xs header-bottom">
+          <div class="row header-bottom-row">
+            <div class="col-sm-3 col-md-4 header-bottom-logo-col">
+              <div class="header-bottom-logo">
+              <a class="header-bottom-logo__link" href="/" >Compu<span class="header-bottom-logo__accent">-Shopper</span></a>
+                </div>
             </div>
-            <div class="col-sm-3 col-md-3 bottom-header-adres-col">
-              <div class="bottom-header-adres">
+            <div class="col-sm-3 col-md-3 header-bottom-address-col">
+              <div class="header-bottom-adres">
                 194000, Russia, Saint Petersburg, Senate Square, 1
               </div>
             </div>
-            <div class="col-sm-6 col-md-5 bottom-header-tel-col">
-              <div class="bottom-header-tel">
-                <a class="bottom-header-tel__phonenumber bottom-header-tel__phonenumber_first" href="tel:84955555555">8 (495) 555-55-55</a>
-                <div class="bottom-header-tel-callback">
-                  <a class="btn btn-default form_dialog cboxElement bottom-header-tel-callback__href" href="/" type="button">Call us</a>
+            <div class="col-sm-6 col-md-5 header-bottom-tel-col">
+              <div class="header-bottom-tel">
+                <a class="header-bottom-tel__phonenumber header-bottom-tel__phonenumber_first" href="tel:84955555555">8 (495) 555-55-55</a>
+                <div class="header-bottom-tel-callback">
+                  <a class="btn btn-default form_dialog cboxElement header-bottom-tel-callback__link" href="/" type="button">Call us</a>
                 </div>
               </div>
             </div>
@@ -180,43 +194,43 @@
                   <div class="logos-owl-carousel">
                     <div class="owl-carousel owl-theme" id="logo-images">
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_1.gif" /> </a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_1.gif" /> </a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_2.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_2.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_3.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_3.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_4.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_4.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_5.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_5.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_6.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_6.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_7.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_7.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_8.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_8.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_9.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_9.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_10.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_10.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_11.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_11.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_12.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_12.gif" /></a>
                       </div>
                       <div class="item">
-                        <a class="owl-carousel-item__href" href="/"><img alt="" src="../assets/img/logos-slider_13.gif" /></a>
+                        <a class="owl-carousel-item__link" href="/"><img alt="" src="../assets/img/logos-slider_13.gif" /></a>
                       </div>
                     </div>
                   </div>
@@ -226,7 +240,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 top-categories-col">
               <div class="row top-categories-row">
                 <div class="col-xs-6 col-sm-6 col-md-4 top-categories-item">
-                  <a href="/" class="top-categories-item__href">
+                  <a href="/" class="top-categories-item__link">
                     <img src="../assets/img/top-categories-item_1.jpg" class="top-categories-item__img" alt="">
                   </a>
                   <div class="top-categories-item__text">
@@ -240,7 +254,7 @@
                   </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-4 top-categories-item">
-                  <a href="/" class="top-categories-item__href">
+                  <a href="/" class="top-categories-item__link">
                     <img src="../assets/img/top-categories-item_2.jpg" class="top-categories-item__img" alt="">
                   </a>
                   <div class="top-categories-item__text">
@@ -254,7 +268,7 @@
                   </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-4 top-categories-item">
-                  <a href="/" class="top-categories-item__href">
+                  <a href="/" class="top-categories-item__link">
                     <img src="../assets/img/top-categories-item_3.jpg" class="top-categories-item__img" alt="">
                   </a>
                   <div class="top-categories-item__text">
@@ -268,7 +282,7 @@
                   </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-4 top-categories-item">
-                  <a href="/" class="top-categories-item__href">
+                  <a href="/" class="top-categories-item__link">
                     <img src="../assets/img/top-categories-item_4.jpg" class="top-categories-item__img" alt="">
                   </a>
                   <div class="top-categories-item__text">
@@ -282,7 +296,7 @@
                   </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-4 top-categories-item">
-                  <a href="/" class="top-categories-item__href">
+                  <a href="/" class="top-categories-item__link">
                     <img src="../assets/img/top-categories-item_5.jpg" class="top-categories-item__img" alt="">
                   </a>
                   <div class="top-categories-item__text">
@@ -296,7 +310,7 @@
                   </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-4 top-categories-item">
-                  <a href="/" class="top-categories-item__href">
+                  <a href="/" class="top-categories-item__link">
                     <img src="../assets/img/top-categories-item_6.jpg" class="top-categories-item__img" alt="">
                   </a>
                   <div class="top-categories-item__text">
@@ -323,7 +337,7 @@
                     <div class="col-xs-6 col-sm-12 col-md-6 goods-widget-goods-item-col">
                       <div class="goods-widget-goods-item">
                         <div class="goods-widget-goods-item__image">
-                          <a class="goods-widget-goods-item__image_href" href="/">
+                          <a class="goods-widget-goods-item__image_link" href="/">
                             <div class="goods-widget-goods-item__image_img" style="background: url(../assets/img/goods-widget-goods-item__image_1.jpg);"></div>
                           </a>
 
@@ -342,7 +356,7 @@
                     <div class="col-xs-6 col-sm-12 col-md-6 goods-widget-goods-item-col">
                       <div class="goods-widget-goods-item">
                         <div class="goods-widget-goods-item__image">
-                          <a class="goods-widget-goods-item__image_href" href="/">
+                          <a class="goods-widget-goods-item__image_link" href="/">
                             <div class="goods-widget-goods-item__image_img" style="background: url(../assets/img/goods-widget-goods-item__image_2.jpg);"></div>
                           </a>
 
@@ -368,7 +382,7 @@
                     <div class="col-xs-6 col-sm-12 col-md-6 goods-widget-goods-item-col">
                       <div class="goods-widget-goods-item">
                         <div class="goods-widget-goods-item__image">
-                          <a class="goods-widget-goods-item__image_href" href="/">
+                          <a class="goods-widget-goods-item__image_link" href="/">
                             <div class="goods-widget-goods-item__image_img" style="background: url(../assets/img/goods-widget-goods-item__image_3.jpg);"></div>
                           </a>
 
@@ -386,7 +400,7 @@
                     <div class="col-xs-6 col-sm-12 col-md-6 goods-widget-goods-item-col">
                       <div class="goods-widget-goods-item">
                         <div class="goods-widget-goods-item__image">
-                          <a class="goods-widget-goods-item__image_href" href="/">
+                          <a class="goods-widget-goods-item__image_link" href="/">
                             <div class="goods-widget-goods-item__image_img" style="background: url(../assets/img/goods-widget-goods-item__image_4.jpg);"></div>
                           </a>
 
@@ -591,13 +605,14 @@
 
 
 
-  function toggleSearch(e) {
-    $(".top-header-search").addClass('top-header-search_opened')
-  }
   $(document).on("click", function (e) {
-    if ($(e.target).is(".top-header-search") === false && $(e.target).is(".top-header-search-box") === false && $(e.target).is(".form-search") === false && $(e.target).is(".form-search__input") === false && $(e.target).is(".form-search__button") === false) {
-      $(".top-header-search").removeClass("top-header-search_opened");
+    if ($(e.target).is(".header-top-search") === false && $(e.target).is(".header-top-search-container") === false && $(e.target).is(".header-top-search-form") === false && $(e.target).is(".header-top-search-form__input") === false && $(e.target).is(".header-top-search-form__button") === false) {
+      $(".header-top-search").removeClass("header-top-search_opened");
     }
+  });
+  $(".header-top-catalog-menu").click(function(){$(this).toggleClass('header-top-catalog-menu_opened');
+  });
+  $(".header-top-search").click(function(){$(".header-top-search").addClass('header-top-search_opened');
   });
 
   var $owl = $("#logo-images").owlCarousel({
@@ -631,12 +646,7 @@
   });
 
 
-  if (($(".bottom-header-logo__href").find("img").length === 0 || $(".bottom-header-logo__href img").width() < 27) && ($(".logo-mm").find("img").length === 0 || $(".logo-mm img").width() < 31)) {
-    $(".bottom-header-logo__href").css("display", "none");
-    $(".bottom-header-logo__href.bottom-header-logo__href_site-name").css("display", "inline-block");
-    $(".logo-mm").css("display", "none");
-    $(".logo-mm.bottom-header-logo__href_site-name").css("display", "inline-block");
-  };
+  
 
   $(document).ready(function () {
     $('#main-carousel').carousel({
@@ -655,10 +665,10 @@
       return false;
     });
 
-    $(".nav-menu-1-level__submenu .nav-menu-2-level:not(:empty)").parent().parent().find(".nav-menu-1-level__href").addClass("nav-menu-1-level__href_have-2-level");
-    $(".nav-menu-1-level__submenu .nav-menu-2-level:not(:empty)").parent().parent().addClass("nav-menu-1-level_have-2-level");
-    $(".nav-menu-2-level__submenu .nav-menu-3-level:not(:empty)").parent().parent().find(".nav-menu-2-level__href").addClass("nav-menu-2-level__href_have-3-level");
-    $(".nav-menu-2-level__submenu .nav-menu-3-level:not(:empty)").parent().parent().addClass("nav-menu-2-level_have-3-level");
+    $(".catalog-menu-1-level__submenu .catalog-menu-2-level:not(:empty)").parent().parent().find(".catalog-menu-1-level__link").addClass("catalog-menu-1-level__link_have-2-level");
+    $(".catalog-menu-1-level__submenu .catalog-menu-2-level:not(:empty)").parent().parent().addClass("catalog-menu-1-level_have-2-level");
+    $(".catalog-menu-2-level__submenu .catalog-menu-3-level:not(:empty)").parent().parent().find(".catalog-menu-2-level__link").addClass("catalog-menu-2-level__link_have-3-level");
+    $(".catalog-menu-2-level__submenu .catalog-menu-3-level:not(:empty)").parent().parent().addClass("catalog-menu-2-level_have-3-level");
 
     ! function (t) {
       t.fn.bcSwipe = function (e) {
