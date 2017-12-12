@@ -22,7 +22,7 @@
 <app-root></app-root>
 
 <div class="site-wrapper">
-    <div class="xs-header">
+    <header class="xs-header">
       <div class="xs-header-menu-toggle">
         <a href="#menu" class="xs-header-menu-toggle__link">&nbsp;</a>
         <div class="icon xs-header-menu-toggle-icon">
@@ -38,10 +38,10 @@
         </div>
       </div>
       <a class="logo-mm xs-header__logo" href="/">Compu<span class="xs-header__logo-accent">-Shopper</span></a>
-    </div>
+    </header>
     <div id="page-wrapper" class="page-wrapper">
       <div class="page-wrapper__shadow-box">
-        <div class="hidden-xs header-top">
+        <header class="hidden-xs header-top">
           <div class="header-top-row">
             <div class="header-top-catalog-menu">
               <div class="header-top-catalog-menu__container">
@@ -95,8 +95,8 @@
               <a aria-hidden="true" class="header-top-user-cabinet__link header-top-user-cabinet__link_login" href="/" type="button">&nbsp;</a>
             </div>
           </div>
-        </div>
-        <div class="hidden-xs header-bottom">
+        </header>
+        <header class="hidden-xs header-bottom">
           <div class="row header-bottom-row">
             <div class="col-sm-3 col-md-4 header-bottom-logo-col">
               <div class="header-bottom-logo">
@@ -104,22 +104,22 @@
                 </div>
             </div>
             <div class="col-sm-3 col-md-3 header-bottom-address-col">
-              <div class="header-bottom-adres">
+              <div class="header-bottom-address">
                 194000, Russia, Saint Petersburg, Senate Square, 1
               </div>
             </div>
-            <div class="col-sm-6 col-md-5 header-bottom-tel-col">
-              <div class="header-bottom-tel">
-                <a class="header-bottom-tel__phonenumber header-bottom-tel__phonenumber_first" href="tel:84955555555">8 (495) 555-55-55</a>
-                <div class="header-bottom-tel-callback">
-                  <a class="btn btn-default form_dialog cboxElement header-bottom-tel-callback__link" href="/" type="button">Call us</a>
+            <div class="col-sm-6 col-md-5 header-bottom-phone-col">
+              <div class="header-bottom-phone">
+                <a class="header-bottom-phone__phonenumber header-bottom-phone__phonenumber_primary" href="tel:84955555555">8 (495) 555-55-55</a>
+                <div class="header-bottom-phone-callback">
+                  <a class="btn btn-default form_dialog cboxElement header-bottom-phone-callback__link" href="/" type="button">Call us</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="content">
-          <div class="row content-row">
+        </header>
+        
+          <div class="main-carousel"><div class="row main-carousel-row">
             <div class="col-xs-12 col-sm-12 col-md-12 top-slider-col">
               <div class="top-slider">
 
@@ -187,7 +187,12 @@
 
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 top-logos-col">
+            
+          </div>
+</div>
+          <div class="brands-carousel"><div class="row brands-carousel-row">
+            
+            <div class="col-xs-12 col-sm-12 col-md-12 brands-carousel-col">
               <div class="logos-owl-carousel-col">
                 <div class="logos-owl-carousel-col__caption">Brands</div>
                 <div class="logos-row">
@@ -237,7 +242,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 top-categories-col">
+            
+            
+          </div>
+            </div>
+            <section class="top-categories">
+              <div class="row top-categories-row">
+                <div class="col-xs-12 col-sm-12 col-md-12 top-categories-col">
               <div class="row top-categories-row">
                 <div class="col-xs-6 col-sm-6 col-md-4 top-categories-item">
                   <a href="/" class="top-categories-item__link">
@@ -325,8 +336,9 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="goods-widget">
+              </div>
+            </section>
+          <section class="goods-widget">
             <div class="row goods-widget-row">
               <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="goods-widget-col">
@@ -418,21 +430,22 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="discount">
+          </section>
+          <section class="discount">
             <div class="discount-text">
-              <div class="discount-text__header">Attention! RAM at a bargain price!</div>
+              <header class="discount-text__header">Attention! RAM at a bargain price!</header>
               <div class="discount-text__caption">Hurry! Only until 31 December!</div>
               <a href="/" class="discount-text__more">Learn More</a>
             </div>
             <div class="discount-img"><img src="../assets/img/discount-img.jpg" alt=""></div>
-          </div>
-          <div class="row content-row">
+          </section>
+        <main class="content">  
+        <div class="row content-row">
             <div class="col-xs-12 col-sm-12 col-md-12 content-col">
               <div class="content-col__include">
-                <div class="row-caption">
+                <header class="row-caption">
                   Welcome to our store!
-                </div>
+                </header>
                 <p>
                   Internet store Compu-Shopper is one of the leading online stores of consumer digital equipment and electronics in Russia.
                 </p>
@@ -479,8 +492,9 @@
 
             </div>
           </div>
-
-          <div class="row reviews-row">
+        </main>
+          <section class="reviews">
+        <div class="row reviews-row">
             <div class="col-xs-12 col-sm-6 col-md-6 reviews-col">
               Customer reviews about our store gray background with white columns background
 
@@ -491,7 +505,7 @@
 
             </div>
           </div>
-        </div>
+        </section>
 
 
 
@@ -500,11 +514,11 @@
         <div class="footer">
           <div class="footer-top">
             <div class="row footer-top-row">
-              <div class="col-xs-12 col-sm-8 col-md-9 footer-menu">
+              <div class="col-xs-12 col-sm-8 col-md-9 footer-nav-menu">
 
-                <a href="/" class="footer-menu__item">Contacts</a>
-                <a href="/" class="footer-menu__item">Contacts</a>
-                <a href="/" class="footer-menu__item">Contacts</a>
+                <a href="/" class="footer-nav-menu__item">Contacts</a>
+                <a href="/" class="footer-nav-menu__item">Contacts</a>
+                <a href="/" class="footer-nav-menu__item">Contacts</a>
 
               </div>
               <div class="col-xs-12 col-sm-4 col-md-3 footer-contacts">

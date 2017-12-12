@@ -1369,7 +1369,7 @@ nav.mm-menu {
   border-color: #CCC
 }
 
-.top-logos-col {
+.brands-carousel-col {
   margin-bottom: 40px;
   padding: 0 45px;
 }
@@ -1404,12 +1404,12 @@ nav.mm-menu {
   background: transparent;
 }
 
-.logos-carousel-row {
+.brands-carousel-row {
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.logos-carousel-header:before {
+.brands-carousel-header:before {
   position: absolute;
   top: -16px;
   left: 50%;
@@ -1421,7 +1421,7 @@ nav.mm-menu {
   content: "";
 }
 
-.logos-carousel-header:after {
+.brands-carousel-header:after {
   position: absolute;
   top: -6px;
   left: 50%;
@@ -2566,7 +2566,7 @@ nav.mm-menu {
   .top-slider-carousel-inner-item {
     height: 300px
   }
-  .top-logos-col {
+  .brands-carousel-col {
     margin-bottom: 30px;
     padding: 0 15px;
   }
