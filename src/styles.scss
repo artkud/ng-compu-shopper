@@ -66,11 +66,29 @@ a:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   @include object-transition-duration;
+&:focus {
+
+  outline: 0;
+  border-color: $body-color-accent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+}
+&::-moz-placeholder {
+  color: $body-color-trivial;
+  opacity: 1
 }
 
-.form-control:focus {
-  border-color: $body-color-active;
+  &:-ms-input-placeholder {
+    color: $body-color-trivial
+  }
+
+  &::-webkit-input-placeholder {
+    color: $body-color-trivial
+  }
+
 }
+
 
 .input-group-addon {
   @include object-transition-duration;
@@ -83,25 +101,7 @@ textarea {
   resize: vertical;
 }
 
-.form-control:focus {
-  outline: 0;
-  border-color: $body-color-accent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
 
-.form-control::-moz-placeholder {
-  color: $body-color-trivial;
-  opacity: 1
-}
-
-.form-control:-ms-input-placeholder {
-  color: $body-color-trivial
-}
-
-.form-control::-webkit-input-placeholder {
-  color: $body-color-trivial
-}
 
 
 button {
@@ -550,19 +550,6 @@ html.mm-pagedim-black #mm-blocker {
   }
 
 }
-
-   /*
-.header-top-catalog-menu__header {
-  z-index: 222;
-  height: 54px;
-  background: $body-color-accent;
-}  */
-
-
-
-
-
-
 
 .catalog-menu {
   display: inline-block;
@@ -1714,25 +1701,20 @@ html.mm-pagedim-black #mm-blocker {
   }
 }
 
-/*.content {
+.main-content {
   position: relative;
   margin-bottom: 30px;
   width: 100%;
   background: #FFF;
 }
 
-.content-row {
+.main-content-row {
   margin: 0 auto;
   max-width: 1200px
-}      */
+}     
 
-.content-header {
-  margin-top: 60px;
-  margin-bottom: 0;
-}
 
-.main-content__header {
-  margin-top: 0;
+.main-content__header { margin-top: 60px;
   margin-bottom: 20px;
   padding-top: 0;
   color: #4B4B4B;
@@ -2100,7 +2082,7 @@ html.mm-pagedim-black #mm-blocker {
   .footer-contacts-tel {
     margin-bottom: 15px;
   }
-  .goods-carousel-item__price {
+  .goods-item__price {
     font-size: 18px
   }
   .header-bottom-tel-col {
@@ -2177,21 +2159,21 @@ html.mm-pagedim-black #mm-blocker {
   .header-bottom-logo__link {
     font-size: 20px
   }
-  .goods-carousel-item {
+  .goods-item {
     min-height: 262px;
   }
-  .goods-carousel-item__name {
+  .goods-item__name {
     overflow: hidden;
     min-height: 44px;
     height: initial;
   }
-  .goods-carousel-item {
+  .goods-item {
     min-height: initial
   }
-  .goods-carousel-item__price {
+  .goods-item__price {
     font-size: 17px;
   }
-  .goods-carousel-item_hidden {
+  .goods-item_hidden {
     display: none;
   }
   #good-id-small-image {
@@ -2218,7 +2200,7 @@ html.mm-pagedim-black #mm-blocker {
   .header-top-user-cabinet__basket-box {
     margin-right: 25px;
   }
-  .goods-carousel-item-col:nth-child(1) {
+  .goods-item-col:nth-child(1) {
     margin-bottom: 40px;
   }
   .discount {
@@ -2250,16 +2232,7 @@ html.mm-pagedim-black #mm-blocker {
 }
 
 @media (min-width: 992px) and (max-width: 1080px) {
-  .news-content-item {
-    min-height: 280px
-  }
-  .article-content-item {
-    min-height: 270px
-  }
-  .blog-content-item {
-    min-height: 200px
-  }
-  .goods-carousel-item {
+  .goods-item {
     min-height: 270px
   }
 }
@@ -2282,7 +2255,7 @@ html.mm-pagedim-black #mm-blocker {
   .main-carousel-carousel-inner-item-caption {
     font-size: 22px;
   }
-  .goods-carousel-item__button {
+  .goods-item__button {
     margin-left: 0
   }
   .header-bottom-tel-call-us__link {
@@ -2294,7 +2267,7 @@ html.mm-pagedim-black #mm-blocker {
 }
 
 @media (max-width: 840px) and (min-width: 768px) {
-  .goods-carousel-item__name {
+  .goods-item__name {
     font-size: 15px
   }
   .catalog-category-item__caption {
@@ -2421,16 +2394,16 @@ html.mm-pagedim-black #mm-blocker {
   .goods-col_second .goods__header {
     margin-bottom: 20px;
   }
-  .goods-carousel-item__name {
+  .goods-item__name {
     font-size: 16px
   }
-  .goods-carousel-item__image_link div {
+  .goods-item__image_link div {
     height: 160px !important
   }
-  .goods-carousel-item-col:nth-child(6) {
+  .goods-item-col:nth-child(6) {
     display: none;
   }
-  .goods-carousel-item {
+  .goods-item {
     padding: 15px;
     min-height: 288px;
   }
@@ -2447,7 +2420,7 @@ html.mm-pagedim-black #mm-blocker {
     margin-bottom: 10px;
     padding-left: 5px;
   }
-  .goods-carousel-item-col:hover {
+  .goods-item-col:hover {
     background: initial;
   }
   .goods-row {
@@ -2554,7 +2527,7 @@ html.mm-pagedim-black #mm-blocker {
     font-size: 14px;
   }
 
-  .goods-carousel-item {
+  .goods-item {
     margin-bottom: 15px;
     min-height: initial;
   }
@@ -2576,24 +2549,24 @@ html.mm-pagedim-black #mm-blocker {
   .goods-col {
     padding: 15px 15px 0 15px;
   }
-  .goods-carousel-item__name {
+  .goods-item__name {
     min-height: initial;
     height: initial;
   }
-  .goods-carousel-item {
+  .goods-item {
     min-height: initial;
   }
   .goods__header {
     margin-bottom: 20px;
   }
-  .goods-carousel-item-col {
+  .goods-item-col {
     padding: 0 15px;
     width: 100%;
   }
-  .goods-carousel-item__button {
+  .goods-item__button {
     margin-bottom: 0;
   }
-  .goods-carousel-item-col:nth-child(6) {
+  .goods-item-col:nth-child(6) {
     display: block;
   }
   .discount {
@@ -2624,27 +2597,11 @@ html.mm-pagedim-black #mm-blocker {
   .main-content__header {
     font-size: 21px;
   }
-  .blog-content-item {
-    min-height: 180px
-  }
-  .btn.btn-continue {
-    margin-right: 0;
-    padding: 6px 10px;
-    font-size: 12px;
-    line-height: 14px
-  }
-  .btn.btn-continue.pull-right {
-    margin-bottom: 0;
-  }
-  .cabinet-fav-buttons__remove {
-    display: block;
-    margin-top: 5px;
-    padding: 7px 5px 0 0;
-  }
-  .goods-carousel-item__image {
+
+  .goods-item__image {
     width: 100%
   }
-  .goods-carousel-item__image_link > div {
+  .goods-item__image_link > div {
     margin-bottom: 15px !important
   }
   .catalog-category-item {
@@ -2774,14 +2731,7 @@ html.mm-pagedim-black #mm-blocker {
     &-nav-menu-list__link {
     }
   }
-  .blog {
-    &-images {
-      &__small-img {
-      }
-      &__big-img {
-      }
-    }
-  }
+
 
   
   .footer {
@@ -2809,16 +2759,7 @@ html.mm-pagedim-black #mm-blocker {
     &-text__btn-order {
     }
   }
-  .blog {
-    &-about {
-    }
-    &-about__description {
-    }
-    &-images__small-img {
-    }
-    &-images__big-img {
-    }
-  }
+
   
 
 
@@ -2860,14 +2801,7 @@ html.mm-pagedim-black #mm-blocker {
     &-text__description {
     }
   }
-  .blog-about {
-  }
-  .blog-images {
-    &__big-img {
-    }
-    &__small-img {
-    }
-  }
+
   
 
 
