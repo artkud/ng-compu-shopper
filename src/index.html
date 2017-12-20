@@ -7,7 +7,9 @@
   <meta name="x-lazy-load-enabled" content="on">
   <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:700|PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
@@ -22,24 +24,28 @@
 <app-root></app-root>
 
 <div class="site-wrapper">
-    <header class="xs-header">
+    <header class="xs-header hidden-sm hidden-md hidden-lg">
       <div class="xs-header-menu-toggle">
-        <div class="icon xs-header-menu-toggle-icon">
+        <div class="xs-header-menu-toggle-icon">
           <div class="first xs-header-menu-toggle-icon__line xs-header-menu-toggle-icon__line_first"></div>
           <div class="second xs-header-menu-toggle-icon__line xs-header-menu-toggle-icon__line_second"></div>
           <div class="third xs-header-menu-toggle-icon__line xs-header-menu-toggle-icon__line_third"></div>
         </div>
         <a href="#menu" class="xs-header-menu-toggle__link"></a>
       </div>
-      <a class="logo-mm xs-header__logo" href="/">Compu<span class="xs-header__logo-accent">-Shopper</span></a>
+      <a class="logo-mm xs-header__logo" href="/"><img src="../assets/img/xs-header__logo-img.svg" alt="Compu-Shop" class="xs-header__logo-img"></a>
     </header>
     <div id="page-wrapper" class="page-wrapper">
       <div class="page-wrapper__shadow-box">
         <header class="hidden-xs header-top">
-          <div class="header-top-row">
+          <div class="header-top-wrapper">
             <div class="header-top-catalog-menu">
               <div class="header-top-catalog-menu__container">
-                <div class="header-top-catalog-menu__header-caption">Catalog</div>
+                <div class="header-top-catalog-menu__header-caption">Catalog <div class="header-top-catalog-menu__icon">
+          <div class="first header-top-catalog-menu__icon-line header-top-catalog-menu__icon-line_first"></div>
+          <div class="second header-top-catalog-menu__icon-line header-top-catalog-menu__icon-line_second"></div>
+          <div class="third header-top-catalog-menu__icon-line header-top-catalog-menu__icon-line_third"></div>
+        </div></div>
                 <div class="header-top-catalog-menu__hidden">
                   <ul class="catalog-menu">
                     <li class="catalog-menu-1-level catalog-menu-1-level_active">
@@ -232,7 +238,7 @@
                 <div class="header-top-search-container">
                   <form action="/" class="header-top-search-form">
                     <input class="form-control header-top-search-form__input" name="text" placeholder="Search products" type="text" value="" />
-                    <input class="header-top-search-form__btn" type="submit" value=""/>
+                    <button class="header-top-search-form__btn" type="submit" value=""></button>
                   </form>
                 </div>
               </div>
@@ -246,7 +252,7 @@
           <div class="row header-bottom-row">
             <div class="col-sm-3 col-md-4 header-bottom-logo-col">
               <div class="header-bottom-logo">
-              <a class="header-bottom-logo__link" href="/">Compu<span class="header-bottom-logo__accent">-Shopper</span></a>
+              <a class="header-bottom-logo__link" href="/"><img src="../assets/img/xs-header__logo-img.svg" alt="Compu-Shop" class="header-bottom-logo__logo-img"></a>
                 </div>
             </div>
             <div class="col-sm-3 col-md-3 header-bottom-address-col">
@@ -258,7 +264,7 @@
               <div class="header-bottom-phone">
                 <a class="header-bottom-phone__phonenumber header-bottom-phone__phonenumber_primary" href="tel:84955555555">8 (495) 555-55-55</a>
                 <div class="header-bottom-phone-callback">
-                  <a class="btn btn-default form_dialog cboxElement header-bottom-phone-callback__link" href="/" type="button">Call us</a>
+                  <a class="btn btn-info form_dialog cboxElement header-bottom-phone-callback__link" href="/" type="button">Call us</a>
                 </div>
               </div>
             </div>
