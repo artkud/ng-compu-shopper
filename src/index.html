@@ -323,11 +323,11 @@
                     </div>
                   </div>
                   <a class="left carousel-control main-carousel-control main-carousel-control_left" href="#main-carousel" role="button" data-slide="prev">
-                    <span class="main-carousel-control__ico main-carousel-control__ico_left" aria-hidden="true"></span>
+                    <span class="material-icons main-carousel-control__icon main-carousel-control__icon_prev" aria-hidden="true">navigate_before</span>
                     <span class="sr-only">Previous</span>
                   </a>
                   <a class="right carousel-control main-carousel-control main-carousel-control_right" href="#main-carousel" role="button" data-slide="next">
-                    <span class="main-carousel-control__ico main-carousel-control__ico_right" aria-hidden="true"></span>
+                    <span class="material-icons main-carousel-control__icon main-carousel-control__icon_next" aria-hidden="true">navigate_next</span>
                     <span class="sr-only">Next</span>
                   </a>
                 </div>
@@ -482,56 +482,9 @@
                 </div>
               </div>
             </section>
-          <section class="goods">
+          <section class="goods-wrapper">
             <div class="row goods-row">
-              <div class="col-xs-12 col-sm-6 col-md-6 goods-col_new-arrivals">
-                <div class="goods goods_new-arrivals">
-                  <a class="goods__header goods__header_new-arrivals" href="/">New arrivals</a>
-                  <div class="owl-carousel owl-theme goods-carousel goods-carousel_new-arrivals" id="goods-carousel_new-arrivals">
-                      <div class="item goods-item goods-item_new-arrivals ">
-                        <a class="goods-item__image-link goods-item__image-link_new-arrivals" href="/">
-                            <img class="goods-item__image-img goods-item__image-img_new-arrivals" src="../assets/img/goods-item__image-img_new-arrivals-1.jpg" alt="" />
-                          </a>
-                        <a class="goods-item__name goods-item__name_new-arrivals" href="/">AMD Ryzen 7 1700 socket AM4 CPU</a>
-                        <div class="goods-item__price goods-item__price_new-arrivals">
-                          <div class="goods-item__price-accent goods-item__price-accent_new-arrivals">220</div> $
-                        </div>
-                        <a class="btn btn-primary goods-item__btn goods-item__btn_new-arrivals" href="/">Buy now</a>
-                      </div>
-                    <div class="item goods-item goods-item_new-arrivals">
-                        <a class="goods-item__image-link goods-item__image-link_new-arrivals" href="/">
-                            <img class="goods-item__image-img goods-item__image-img_new-arrivals" src="../assets/img/goods-item__image-img_new-arrivals-2.jpg" alt="" />
-                          </a>
-                        <a class="goods-item__name goods-item__name_new-arrivals" href="/">Intel Pro-2500 180Gb Solid State Drive</a>
-                        <div class="goods-item__price goods-item__price_new-arrivals">
-                          <div class="goods-item__price-accent goods-item__price-accent_new-arrivals">160</div> $
-                        </div>
-                        <a class="btn btn-primary goods-item__btn goods-item__btn_new-arrivals" href="/">Buy now</a>
-                      </div>
-                    <div class="item goods-item goods-item_new-arrivals">
-                        <a class="goods-item__image-link goods-item__image-link_new-arrivals goods-item__image-link_off-40!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" href="/">
-                            <img class="goods-item__image-img goods-item__image-img_new-arrivals" src="../assets/img/goods-item__image-img_new-arrivals-3.jpg" alt="" />
-                          </a>
-                        <a class="goods-item__name goods-item__name_new-arrivals" href="/">333333333333333333</a>
-                        <div class="goods-item__price goods-item__price_new-arrivals">
-                          <div class="goods-item__price-accent goods-item__price-accent_new-arrivals">160</div> $
-                        </div>
-                        <a class="btn btn-primary goods-item__btn goods-item__btn_new-arrivals" href="/">Buy now</a>
-                      </div>
-                    <div class="item goods-item goods-item_new-arrivals">
-                        <a class="goods-item__image-link goods-item__image-link_new-arrivals" href="/">
-                            <img class="goods-item__image-img goods-item__image-img_new-arrivals" src="../assets/img/goods-item__image-img_new-arrivals-4.jpg" alt="" />
-                          </a>
-                        <a class="goods-item__name goods-item__name_new-arrivals" href="/">4444444444444444444</a>
-                        <div class="goods-item__price goods-item__price_new-arrivals">
-                          <div class="goods-item__price-accent goods-item__price-accent_new-arrivals">160</div> $
-                        </div>
-                        <a class="btn btn-primary goods-item__btn goods-item__btn_new-arrivals" href="/">Buy now</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-6 goods-col_bestsellers">
+              <div class="col-xs-12 col-sm-6 col-md-6 goods-col goods-col_bestsellers">
                 <div class="goods goods_bestsellers">
                   <a class="goods__header goods__header_bestsellers" href="/">Bestsellers</a>
                   <div class="owl-carousel owl-theme goods-carousel goods-carousel_bestsellers" id="goods-carousel_bestsellers">
@@ -578,6 +531,55 @@
                     </div>
                 </div>
               </div>
+              
+              <div class="col-xs-12 col-sm-6 col-md-6 goods-col goods-col_new-arrivals">
+                <div class="goods goods_new-arrivals">
+                  <a class="goods__header goods__header_new-arrivals" href="/">New arrivals</a>
+                  <div class="owl-carousel owl-theme goods-carousel goods-carousel_new-arrivals" id="goods-carousel_new-arrivals">
+                      <div class="item goods-item goods-item_new-arrivals ">
+                        <a class="goods-item__image-link goods-item__image-link_new-arrivals" href="/">
+                            <img class="goods-item__image-img goods-item__image-img_new-arrivals" src="../assets/img/goods-item__image-img_new-arrivals-1.jpg" alt="" />
+                          </a>
+                        <a class="goods-item__name goods-item__name_new-arrivals" href="/">AMD Ryzen 7 1700 socket AM4 CPU</a>
+                        <div class="goods-item__price goods-item__price_new-arrivals">
+                          <div class="goods-item__price-accent goods-item__price-accent_new-arrivals">220</div> $
+                        </div>
+                        <a class="btn btn-primary goods-item__btn goods-item__btn_new-arrivals" href="/">Buy now</a>
+                      </div>
+                    <div class="item goods-item goods-item_new-arrivals">
+                        <a class="goods-item__image-link goods-item__image-link_new-arrivals" href="/">
+                            <img class="goods-item__image-img goods-item__image-img_new-arrivals" src="../assets/img/goods-item__image-img_new-arrivals-2.jpg" alt="" />
+                          </a>
+                        <a class="goods-item__name goods-item__name_new-arrivals" href="/">Intel Pro-2500 180Gb Solid State Drive</a>
+                        <div class="goods-item__price goods-item__price_new-arrivals">
+                          <div class="goods-item__price-accent goods-item__price-accent_new-arrivals">160</div> $
+                        </div>
+                        <a class="btn btn-primary goods-item__btn goods-item__btn_new-arrivals" href="/">Buy now</a>
+                      </div>
+                    <div class="item goods-item goods-item_new-arrivals">
+                        <a class="goods-item__image-link goods-item__image-link_new-arrivals goods-item__image-link_off-40!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" href="/">
+                            <img class="goods-item__image-img goods-item__image-img_new-arrivals" src="../assets/img/goods-item__image-img_new-arrivals-3.jpg" alt="" />
+                          </a>
+                        <a class="goods-item__name goods-item__name_new-arrivals" href="/">333333333333333333</a>
+                        <div class="goods-item__price goods-item__price_new-arrivals">
+                          <div class="goods-item__price-accent goods-item__price-accent_new-arrivals">160</div> $
+                        </div>
+                        <a class="btn btn-primary goods-item__btn goods-item__btn_new-arrivals" href="/">Buy now</a>
+                      </div>
+                    <div class="item goods-item goods-item_new-arrivals">
+                        <a class="goods-item__image-link goods-item__image-link_new-arrivals" href="/">
+                            <img class="goods-item__image-img goods-item__image-img_new-arrivals" src="../assets/img/goods-item__image-img_new-arrivals-4.jpg" alt="" />
+                          </a>
+                        <a class="goods-item__name goods-item__name_new-arrivals" href="/">4444444444444444444</a>
+                        <div class="goods-item__price goods-item__price_new-arrivals">
+                          <div class="goods-item__price-accent goods-item__price-accent_new-arrivals">160</div> $
+                        </div>
+                        <a class="btn btn-primary goods-item__btn goods-item__btn_new-arrivals" href="/">Buy now</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
             </div>
           </section>
           <section class="discount">
@@ -836,14 +838,14 @@
   });
   var $owlGoodsCarouselNewArrivals = $("#goods-carousel_new-arrivals").owlCarousel({
     loop: true,
-    nav: true,
+    nav: false,
     items: 2,
-    margin: 15,
+    margin: 30,
     merge: true,
     responsive: {
       991: {
         items: 2,
-        mergeFit: false
+        mergeFit: true
       },
       767: {
         items: 3,
@@ -864,14 +866,14 @@
   });
   var $owlGoodsCarouselBestsellers = $("#goods-carousel_bestsellers").owlCarousel({
     loop: true,
-    nav: true,
+    nav: false,
     items: 2,
-    margin: 15,
+    margin: 30,
     merge: true,
     responsive: {
       991: {
         items: 2,
-        mergeFit: false
+        mergeFit: true
       },
       767: {
         items: 3,
@@ -892,10 +894,13 @@
   });
   $(document).ready(function () {
     $('#main-carousel').carousel({
-      interval: 5000
+      interval: 4000
     }).bootsrapCarouselSwipe({
       threshold: 35
     });
+    $owlBrandsCarousel.trigger('refresh.owl.carousel');
+    $owlGoodsCarouselNewArrivals.trigger('refresh.owl.carousel');
+    $owlGoodsCarouselBestsellers.trigger('refresh.owl.carousel');
     var $root = $('html, body');
     $('a[href^="#"]:not(.carousel-control)').click(function () {
       $root.animate({
@@ -946,9 +951,9 @@
       ]
     });
   });
-  /*$(window).resize(function () {
+  $(window).resize(function () {
     $owlBrandsCarousel.trigger('refresh.owl.carousel');
     $owlGoodsCarouselNewArrivals.trigger('refresh.owl.carousel');
     $owlGoodsCarouselBestsellers.trigger('refresh.owl.carousel');
-  });*/ 
+  }); 
 </script>
