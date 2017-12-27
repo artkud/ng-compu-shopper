@@ -287,26 +287,26 @@ button { border-radius: 0;
 
 .xs-header {
   position: absolute;
-  z-index: 101;
+  z-index: 10;
   width: 100% !important;
-  height: 60px;
+  height: 41px;
   border-bottom: solid 1px $color-grey_light !important;
   background: #FFF !important;
 
   &__logo {
     padding:0;
-    height: 60px;
+    height: 40px;
     text-decoration: none;
     font-size: 0;
-    line-height: 60px;
+    line-height: 40px;
   }
-  &__logo-img { max-height: 60px;
+  &__logo-img { max-height: 40px;
     max-width: 100%;@include object-transition-duration;}
 }
 
 .xs-header-menu-toggle-icon {
   position: absolute;
-  top: 23px;
+  top: 11px;
   left: 14px;
   z-index: 101;
   width: 21px;
@@ -335,7 +335,7 @@ button { border-radius: 0;
   top: 0;
   right: 0;
   width: 50px;
-  height: 60px;
+  height: 40px;
   z-index: 51;
   &__link {
     position: absolute;
@@ -387,7 +387,7 @@ nav.mm-menu {
     input {
       display: block;
       margin: 0;
-      padding: 0 20px;
+      padding: 0 40px 0 20px;
       width: 100%;
       height: 39px;
       min-height: 39px;
@@ -471,8 +471,49 @@ nav.mm-menu {
   .mm-listview > li:after {
     border-color: transparent !important
   }
+  .mm-listview__link-back{
+    padding-left:40px;
+    &:after {
+      position: absolute;
+      top: 9px;
+      left: 14px;
+      width: 22px;
+      height: 22px;
+      font-size: 22px;
+      color: #FFF;
+      @include object-transition-duration_fast;
+      @include material-icon;
+      content: 'expand_more';
+      opacity: 1;
+      border:none;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      margin:0;
+    }
+  }
+  .mm-listview .mm-next+a, .mm-listview .mm-next+span{ margin-right:65px;}
+  .mm-listview .mm-next{ width:65px;}
   .mm-listview .mm-next:before {
-    border-color: transparent !important
+    display: none;
+  }
+  .mm-listview .mm-next:after {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    color: #FFF;
+    @include object-transition-duration_fast;
+    @include material-icon;
+    content: 'expand_more';
+    opacity: 1;
+    border:none;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    margin:0;
   }
   .mm-navbar>*{ padding:0;}
 
@@ -480,7 +521,8 @@ nav.mm-menu {
 .mm-navbar-app{ color: #fff;font-size: 18px; padding: 7px 0 7px 0;
   &__link{ margin-left:13px; display: inline-block;} 
   &__icon{max-width: 26px;max-height: 26px;object-fit: contain}
-} 
+}
+  .mm-noresultsmsg{ color: $color-grey_light;} 
 }
 
 .mm-page {
@@ -1216,9 +1258,9 @@ html.mm-pagedim-black #mm-blocker {
   &__caption-text {
     font-weight: 700;
     font-size: 38px;
-    -webkit-font-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-    -moz-font-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-    font-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    -webkit-font-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
+    -moz-font-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
+    font-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4);
     color: #FFF;
     font-family: $btn-font-family;
     &:hover, &:focus {
@@ -2005,7 +2047,7 @@ html.mm-pagedim-black #mm-blocker {
 
 
 
-  .header-bottom-address{ padding-top:10px;font-size: 15px; min-width:220px;}
+  .header-bottom-address{ padding-top:10px;font-size: 15px; max-width:220px;}
 
   .goods-item__name{min-height: 66px}
   .catalog-category-item__img{ width:90px;}
@@ -2128,6 +2170,7 @@ html.mm-pagedim-black #mm-blocker {
   .catalog-menu-1-level__link,.catalog-menu-2-level__link,.catalog-menu-3-level__link{font-size: 15px}
   .header-bottom-address {
     font-size: 14px;
+    min-width: initial;
   }
   .header-bottom-phone__link{font-size: 22px}
   .main-carousel-inner-item-caption {
@@ -2172,7 +2215,9 @@ html.mm-pagedim-black #mm-blocker {
   #page-wrapper {
     position: relative;
     min-height: 100%;
-  }
+         padding-top: 41px;
+         background: transparent
+       }
   html {
     background: #FFF;
     font-size: 15px;
@@ -2358,11 +2403,7 @@ html.mm-pagedim-black #mm-blocker {
   .footer-bottom{ padding:0;}
    .footer-bottom-company-name-col{ margin-bottom:15px;}
   .footer-bottom-portfolio-link{ text-align: left;}
-  #page-wrapper {
-    padding-top: 60px;
-    padding-bottom: 0 !important;
-    background: transparent
-  }
+  
 }
 
 @media (max-width: 539px) {

@@ -236,7 +236,7 @@
               <div class="header-top-search">
                 <div class="header-top-search-container">
                   <form action="/" class="header-top-search-form">
-                    <input class="form-control header-top-search-form__input" name="text" placeholder="Search products" type="text" value="" />
+                    <input class="form-control header-top-search-form__input" name="text" placeholder="Search by keywords" type="text" value="" />
                     <button class="header-top-search-form__btn" type="submit" value=""></button>
                   </form>
                 </div>
@@ -302,10 +302,10 @@
                     </div>
                     <div class="item main-carousel-inner-item">
                       <a href="/" class="main-carousel-inner-item__link">
-                        <img src="../assets/img/main-carousel-inner-item__img_3.jpg" alt="Black Friday Sales" class="main-carousel-inner-item__img">
+                        <img src="../assets/img/main-carousel-inner-item__img_3.jpg" alt="Christmas Sale" class="main-carousel-inner-item__img">
                         <div class="carousel-caption main-carousel-inner-item__caption">
                           <div class="main-carousel-inner-item__caption-text">
-                          Black Friday Sales</div>
+                          Christmas Sale</div>
                           <div class="btn btn-primary main-carousel-inner-item__btn">Up to 90% Off</div>
                         </div>
                       </a>
@@ -801,6 +801,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="/">Catalog</a>
     <ul>
+      <li><a class="mm-listview__link-back" href="#mm-1">Back</a></li>
       <li><a href="/">Computers</a></li>
       <li><a href="/">Computer Components</a></li>
       <li><a href="/">Peripherals</a></li>
@@ -965,7 +966,7 @@
   });
   $(document).ready(function () {
     $('#main-carousel').carousel({
-      interval: 117000
+      interval: 5000
     }).bootsrapCarouselSwipe({
       threshold: 35
     });
@@ -994,7 +995,7 @@
       extensions: ['effect-slide-panels-1', 'pagedim-black'],
       searchfield: {
         add: true,
-        placeholder: 'Search products',
+        placeholder: 'Search by keywords',
         search: true
       },
       navbar: {
